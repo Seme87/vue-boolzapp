@@ -58,6 +58,7 @@ img{
     width: 100%;
     height: 100%;
     background-color: bisque;
+    flex-direction: column;
 }
 
 /*------------------
@@ -209,4 +210,66 @@ img{
 .text-contact p, .date-contact p{
     font-size: 13px;
     color: #b1b1b1;
+}
+ /* List contatc */
+
+ /*------------------
+     ASIDE-BAR
+-------------------*/
+
+
+
+
+/*------------------
+    CHAT ASIDE-BAR
+-------------------*/
+
+.header-chat-side{
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 15px;
+    background-color: #eaeaea;
+    border-left:1px solid #b1b1b165;
+}
+
+
+.main-chat{
+    flex-grow: 1;
+    background-image: url(.img/mine.jpg);
+}
+
+.footer-chat{
+   height: 75px;
+   background-color: #f3eeea; 
+}
+
+
+
+
+
+
+.header-avatar-select{
+    height: 50px;
+    width: 50px;
+}
+
+.header-avatar-select img{
+    border-radius: 50%;
+}
+
+.text-header-chat{
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.icon-header-chat i{
+    padding:0 10px;
+    font-size: 1.25rem;
+    color: #b1b1b1;
+}
+
+.icon-header-chat{
+    align-items: center;
 }
