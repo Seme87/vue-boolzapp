@@ -224,6 +224,7 @@ img{
     CHAT ASIDE-BAR
 -------------------*/
 
+/* COMMON */
 .header-chat-side{
     padding: 10px;
     padding-left: 10px;
@@ -235,19 +236,20 @@ img{
 
 .main-chat{
     flex-grow: 1;
-    background-image: url(.img/mine.jpg);
+    background-image: url(../img/mine.jpg);
 }
 
 .footer-chat{
    height: 75px;
-   background-color: #f3eeea; 
+   background-color: #f3eeea;
+   padding: 10px; 
 }
+/* COMMON */
 
 
 
 
-
-
+/* header-chat side */
 .header-avatar-select{
     height: 50px;
     width: 50px;
@@ -264,6 +266,11 @@ img{
     margin-left: 20px;
 }
 
+.text-header-chat p{
+    font-size: 13px;
+    color: #b1b1b1;
+}
+
 .icon-header-chat i{
     padding:0 10px;
     font-size: 1.25rem;
@@ -273,3 +280,38 @@ img{
 .icon-header-chat{
     align-items: center;
 }
+/* header-chat side */
+
+
+/* footer chat */
+.icon-footer-chat-smile, .icon-footer-chat-microphone{
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+}
+.icon-footer-chat-smile i, .icon-footer-chat-microphone i{
+    font-size: 20px;
+    color: #b1b1b1;
+}
+
+.bar-chat-footer{
+    flex-grow: 1;
+    height: 100%;
+    width: 100%;
+}
+
+.bar-chat-footer input {
+    padding: 0 10px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+}
+
+/* footer chat */
+
+
+/*------------------
+    CHAT ASIDE-BAR
+-------------------*/
