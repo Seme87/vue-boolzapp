@@ -16,9 +16,159 @@
 /*------------------
         COMMON
 -------------------*/
+
+
 body{
+    width: 100vw;
     height: 100vh;
-    background-image:  linear-gradient( #009688 20%,  #d9dbd4  80%);
+    background: linear-gradient(to bottom, #009688 20%, #d9dbd5 0%); 
+    font-family: 'Lato', sans-serif;
 }
 
+img{
+    width: 100%;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.big-container{
+    max-width: 1280px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 40px);;
+    background-color: white; 
+}
+
+.aside-bar{
+    width: 40%;
+    height: 100%;
+    background-color: red;
+}
+
+.chat-side{
+    width: 100%;
+    height: 100%;
+    background-color: bisque;
+}
+
+/*------------------
+        COMMON
+-------------------*/
+
+
+
+
+/*------------------
+    CORE PROJECT
+-------------------*/
+
+
+
+/*------------------
+     ASIDE-BAR
+-------------------*/
+
+/* Header aside bar */
+.header-aside-bar{
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 20px;
+    background-color:#eaeaea;
+}
+
+.user-avatar{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.user-avatar img{
+    border-radius: 50%;
+}
+
+.user-icon{
+    color:#b1b1b1 ;
+    flex-grow: 1;
+    text-align: end;
+}
+.user-icon i{
+    padding: 0 8px;
+}
+/* Header aside bar */
+
+/* Notification bar */
+
+.notifications-bar{
+    padding: 15px 20px;
+    background-color:#8edafc ;
+    height: 80px;
+}
+
+.icon-notification{
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    background-color: #f2fbff;
+    border-radius: 50px;
+}
+
+.icon-notification i{
+    font-size: 20px;
+    color: #8edafc;
+}
+
+.text-notification{
+    padding: 0 10px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-notification a{
+    font-size: .8125rem;
+    color: #b1b1b1;
+}
+/* Notification bar */
+
+ /* Search contact bar */
+ .search-contact{
+    height: 50px;
+    background-color: #fafafa;
+    padding: 8px;
+ }
+
+ .icon-search-contact{
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    width: 75px;
+    background-color:#ffffff;
+    color: #b1b1b1;
+ }
+
+ .form-bar-search{
+    flex-grow: 1;
+    height: 35px;
+    background-color: #ffffff;
+ }
+
+.form-bar-search input{
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    border: none;
+}
 

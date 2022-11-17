@@ -9,16 +9,89 @@
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- CDN VUE -->
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- FONT AWESOME -->
+
+    <!-- FONT GOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lato:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Open+Sans:wght@400;800&family=PT+Sans:ital,wght@0,400;0,700;1,400&family=PT+Serif:ital@0;1&family=Prompt:wght@400;500&family=Roboto:wght@400;700&family=Ubuntu:ital,wght@0,400;1,300&display=swap"
+    rel="stylesheet">
+    <!-- FONT GOGLE -->
+
     <!-- LINK CSS  -->
     <link rel="stylesheet" href="css/style.css">
     <!-- LINK CSS  -->
 
+    
 
 
     <title>Boolzap</title>
 </head>
+
+
 <body>
 
+    <div id="app" class="big-container">
+        <div class="container">
+
+            <!-- ASIDE BAR -->
+            <aside class="aside-bar">
+
+                <!-- Header aside bar-->
+                <div class="header-aside-bar d-flex">
+                   <div class="user-avatar">
+                        <img src="img/avatar_8.jpg" alt="user">
+                   </div>
+                   <div class="user-text">
+                        <h5>Jon Doe</h5>
+                   </div> 
+                   <div class="user-icon">
+                        <i class="fa-solid fa-circle-notch"></i>
+                        <i class="fa-solid fa-message"></i>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                   </div>
+                </div>
+                <!-- Header aside bar -->
+
+                <!-- Notification bar -->
+                <div class="notifications-bar d-flex">
+                    <div class="icon-notification d-flex">
+                        <i class="fa-solid fa-bell-slash"></i>
+                    </div>
+                    <div class="text-notification d-flex">
+                        <h5>Ricevi notifiche di nuovi messaggi</h5>
+                        <a href="#">Attiva notifiche desktop</a>
+                    </div>
+                </div>
+                <!-- Notification bar -->
+
+                <!-- search-contact-bar -->
+                <div class="search-contact d-flex">
+
+                    <div class="icon-search-contact d-flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                 
+                    <form class="form-bar-search d-flex">
+                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    </form>
+                    
+                </div>
+                <!-- search-contact-bar -->
+
+
+            </aside>
+            <!-- ASIDE BAR -->
+
+
+            <!-- CHAT SIDE BAR -->
+            <div class="chat-side d-flex"></div>
+            <!-- CHAT SIDE BAR -->
+
+        </div>
+    </div>
 
 
 
