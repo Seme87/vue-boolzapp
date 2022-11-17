@@ -51,7 +51,7 @@ img{
 .aside-bar{
     width: 40%;
     height: 100%;
-    background-color: red;
+    background-color: #ffffff;
 }
 
 .chat-side{
@@ -171,4 +171,42 @@ img{
     padding: 10px;
     border: none;
 }
+ /* Search contact bar */
 
+ /* List contatc */
+
+ .container-contact{
+    flex-direction: column;
+    height: 635px;
+    background-color: aquamarine;
+    width: 100%;
+    overflow-y: auto;
+ }
+
+.contact{
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    justify-content: space-between;
+    background-color: #ffffff;
+    border-bottom: #b1b1b1;
+}
+
+.avatar-contact{
+    height: 60px;
+    width: 60px;
+}
+
+.avatar-contact img{
+    border-radius: 50%;
+}
+
+.text-contact{
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.text-contact p, .date-contact p{
+    font-size: 13px;
+    color: #b1b1b1;
+}
