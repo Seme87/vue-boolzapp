@@ -4,7 +4,9 @@ const { createApp } = Vue
     data() {
       return {
         currentImage:0,
+
         contacts: [
+            
     {
         name: 'Michele',
         avatar: '_1',
