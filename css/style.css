@@ -193,6 +193,10 @@ img{
     border-bottom: #b1b1b1;
 }
 
+.bg-contact {
+    background-color:#e9ebeb ;
+}
+
 .avatar-contact{
     height: 60px;
     width: 60px;

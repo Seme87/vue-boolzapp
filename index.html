@@ -84,14 +84,14 @@
                 <!-- List contact -->
                 <div class="container-contact d-flex">
 
-                    <div class="contact d-flex">
+                    <div class="contact d-flex" v-for="(contact, index) in contacts" :class="{'bg-contact':index===currentImage }">
 
                         <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
+                            <img :src="`img/avatar${contact.avatar}.jpg`" alt="Michele-avatar">
                         </div>
 
                         <div class="text-contact">
-                            <h5>Michele</h5>
+                            <h5>{{ contact.name }}</h5>
                             <p>Ultimo messaggio inviato</p>
                         </div>
 
@@ -101,141 +101,11 @@
 
                     </div>
 
-                    <div class="contact d-flex">
                     
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
 
-                    <div class="contact d-flex">
                     
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
 
-                    <div class="contact d-flex">
                     
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="contact d-flex">
-                    
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="contact d-flex">
-                    
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
-
-                    <div class="contact d-flex">
-                    
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
-
-                    <div class="contact d-flex">
-                    
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
-                    
-                    <div class="contact d-flex">
-                    
-                        <div class="avatar-contact">
-                            <img src="img/avatar_1.jpg" alt="Michele-avatar">
-                        </div>
-                    
-                        <div class="text-contact">
-                            <h5>Michele</h5>
-                            <p>Ultimo messaggio inviato</p>
-                        </div>
-                    
-                        <div class="date-contact">
-                            <p>12:00</p>
-                        </div>
-                    
-                    </div>
 
 
 
@@ -286,7 +156,7 @@
                         </div>
                         <div class="container-message recived d-flex">
                             <div class="message">
-                                Ricorda di stendere i panni.
+                                Tutto Fatto!
                             </div>
                         </div>
                         
