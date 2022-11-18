@@ -283,6 +283,37 @@ img{
 /* header-chat side */
 
 
+/* Main chat */
+.container-global-message{
+    margin:30px 40px;
+    
+}
+
+.container-message{
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    
+}
+
+.message{
+    min-width: 30%;
+    max-width: 45%;
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.sent{
+    background-color: #d5f9ba;
+}
+
+.recived{
+    justify-content: flex-start;
+}
+
+
+
+
 /* footer chat */
 .icon-footer-chat-smile, .icon-footer-chat-microphone{
     justify-content: center;
