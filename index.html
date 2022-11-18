@@ -134,26 +134,21 @@
 
                 <!-- Main chat  -->
                 <div class="main-chat">
+
                     <div class="container-global-message">
 
-                        <div class="container-message d-flex" v-for="message in contacts[currentImage].messages" >
-                            <div class="message d-flex" :class="message.status">
+                        <div class="container-message d-flex" :class="message.status" v-for="message in contacts[currentImage].messages" >
+                            <div class="message d-flex" >
                                 {{ message.message }}
+                                <div class="date-message">
+                                    {{ message.date }}
+                                </div>
                             </div>
-                        </div>
-                        <div class="container-message d-flex">
-                            <div class="message sent">
-                               
-                            </div>
-                        </div>
-                        <div class="container-message received d-flex">
-                            <div class="message">
-                                
-                            </div>
+                            
                         </div>
                         
-
                     </div>
+
                 </div>
                 <!-- Main chat  -->
 
@@ -166,8 +161,8 @@
                     </div>
 
                     
-                    <form class="bar-chat-footer">
-                        <input type="text" placeholder="Invia un messaggio">
+                    <form class="bar-chat-footer" @submit.prevent="addMessage">
+                        <input type="text" v-model="textNewMessage" placeholder="Invia un messaggio">
                     </form>
                     
 

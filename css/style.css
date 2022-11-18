@@ -308,11 +308,15 @@ img{
 }
 
 .sent{
-    background-color: #d5f9ba;
+   justify-content: end;
 }
 
 .received{
     justify-content: flex-start;
+}
+
+.sent > .message{
+    background-color:#d5f9ba ;
 }
 
 

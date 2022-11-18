@@ -4,9 +4,10 @@ const { createApp } = Vue
     data() {
       return {
         currentImage:0,
+        textNewMessage:'',
 
         contacts: [
-            
+
     {
         name: 'Michele',
         avatar: '_1',
@@ -171,5 +172,15 @@ const { createApp } = Vue
 ]
 
       }
+    },
+    methods:{
+        addMessage(){
+            const objNewMessage ={
+                text: this.textNewMessage,
+                date: '10/01/2020 15:30:55',
+                status: sent
+            };
+            this.contacts.messages.push(objNewMessage);
+        }
     }
   }).mount('#app')
