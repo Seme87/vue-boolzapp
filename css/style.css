@@ -300,6 +300,7 @@ img{
 }
 
 .message{
+    position: relative;
     min-width: 30%;
     max-width: 45%;
     background-color: white;
@@ -317,6 +318,15 @@ img{
 
 .sent > .message{
     background-color:#d5f9ba ;
+}
+
+.date-message{
+    color: #b1b1b1;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 8px;
+    padding: 2px;
 }
 
 

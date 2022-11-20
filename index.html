@@ -87,7 +87,7 @@
                     <div class="contact d-flex" @click="currentImage=index" v-for="(contact, index) in contacts" :class="{'bg-contact':index===currentImage }">
 
                         <div class="avatar-contact">
-                            <img :src="`img/avatar${contact.avatar}.jpg`" alt="Michele-avatar">
+                            <img :src="`img/avatar${contact.avatar}.jpg`" alt="{{ contact.name }}">
                         </div>
 
                         <div class="text-contact">
@@ -141,7 +141,7 @@
                             <div class="message d-flex" >
                                 {{ message.message }}
                                 <div class="date-message">
-                                    {{ message.date }}
+                                    <!-- {{ message.date }} -->
                                 </div>
                             </div>
                             

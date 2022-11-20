@@ -175,12 +175,22 @@ const { createApp } = Vue
     },
     methods:{
         addMessage(){
+            console.log(this.contacts)
             const objNewMessage ={
-                text: this.textNewMessage,
-                date: '10/01/2020 15:30:55',
-                status: sent
+                message: this.textNewMessage,
+                date: ' 15:30:55',
+                status: 'sent'
             };
-            this.contacts.messages.push(objNewMessage);
+            this.contacts[this.currentImage].messages.push(objNewMessage);
+            this.textNewMessage='';
+            setTimeout(()=>{
+              const objNewMessage ={
+                message: 'okay!',
+                date: ' 15:30:55',
+                status: 'received'
+            };
+            this.contacts[this.currentImage].messages.push(objNewMessage);  
+            },1000)
         }
     }
   }).mount('#app')
