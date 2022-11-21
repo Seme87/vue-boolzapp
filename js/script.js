@@ -195,4 +195,11 @@ const { createApp } = Vue
         },
         
     },
+    // computed:{
+    //    filterContacts() {
+    //     return this.contacts.filter(contact =>{
+    //         contact.name.toloweCase().includes(this.searchContacts.toloweCase())
+    //     })
+    //    } 
+    // }
   }).mount('#app')

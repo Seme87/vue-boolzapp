@@ -85,7 +85,7 @@
                 <div class="container-contact d-flex">
 
                     <div class="contact d-flex" @click="currentImage=index" v-for="(contact, index) in contacts" :class="{'bg-contact':index===currentImage }">
-
+                        
                         <div class="avatar-contact">
                             <img :src="`img/avatar${contact.avatar}.jpg`" alt="{{ contact.name }}">
                         </div>
