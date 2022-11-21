@@ -74,8 +74,8 @@
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                  
-                    <form class="form-bar-search d-flex">
-                        <input type="text" placeholder="Cerca o inizia una nuova chat">
+                    <form class="form-bar-search d-flex" @submit.prevent>
+                        <input v-model="searchContacts" type="text" placeholder="Cerca o inizia una nuova chat">
                     </form>
                     
                 </div>

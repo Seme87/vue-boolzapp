@@ -5,6 +5,7 @@ const { createApp } = Vue
       return {
         currentImage:0,
         textNewMessage:'',
+        searchContacts:'',
 
         contacts: [
 
@@ -191,6 +192,7 @@ const { createApp } = Vue
             };
             this.contacts[this.currentImage].messages.push(objNewMessage);  
             },1000)
-        }
-    }
+        },
+        
+    },
   }).mount('#app')
