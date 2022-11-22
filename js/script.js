@@ -195,12 +195,12 @@ const { createApp } = Vue
         },
         
     },
-    computed:{
-       filterContacts() {
-        return this.contacts.filter(contact =>{
-            contact.name.toLowerCase().includes(this.searchContacts.toLowerCase())
-            console.log(this.filterContacts)
-        })
-       } 
-    }
+    // computed:{
+    //    filterContacts() {
+    //     return this.contacts.filter(contact =>{
+    //         contact.name.toLowerCase().includes(this.searchContacts.toLowerCase())
+    //         console.log(this.filterContacts)
+    //     })
+    //    } 
+    // }
   }).mount('#app')
